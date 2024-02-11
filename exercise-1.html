@@ -73,6 +73,12 @@
 		}
 
 		/* Air */
+    #media video,
+    #media iframe {
+      border: 1px solid #5521db;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
 	</style>
 </head>
 <body>
@@ -99,6 +105,15 @@
 
 		<div id="media">
 			<!-- Air -->
+      <video
+      controls
+      height="320"
+      loop
+      muted
+      poster="images/video-poster.jpg"
+      src="videos/video-1@c.mp4"
+      width="640"
+      >You browser doesn't support HTML5 video tag.</video>
 		</div>
 	</section>
 </body>
