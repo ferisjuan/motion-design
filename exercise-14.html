@@ -150,11 +150,44 @@
 		}
 
 		/* Air */
-		/* You can download the walking sequences you saw in the video using the links below */
-		/* - https://elements.envato.com/animation-of-girl-walking-S4WXEK8 */
-		/* - https://elements.envato.com/animation-of-boy-walking-7H3QTE3 */
-		/* - https://elements.envato.com/animation-of-zombie-walking-9QDTDMW */
-		/* - https://elements.envato.com/animation-of-skeleton-walking-SK7SQUJ */
+    #luna {
+      background-image: url(illustrations/luna-walking-sequence@c.svg);
+    }
+
+    #max {
+      background-image: url(illustrations/max-walking-sequence@c.svg);
+    }
+
+    #zombo {
+      background-image: url(illustrations/zombo-walking-sequence@c.svg);
+    }
+
+    #ribsy {
+      background-image: url(illustrations/ribsy-walking-sequence@c.svg);
+    }
+
+    .card {
+      margin-block: 40px;
+    }
+
+    .card figure {
+      background-repeat: none;
+      background-size: cover;
+      height: 320px;
+      width: 190px;
+    }
+
+    .card.selected figure {
+      /* steps is a time func that allows to break the animation into a number of steps */
+      /* we have 7 frames in the animation, so we need to repeat it 7 times */
+      animation: .6s steps(7) infinite walking;
+    }
+
+    @keyframes walking {
+      to {
+        background-position: 100%;
+      }
+    }
 	</style>
 </head>
 <body>
